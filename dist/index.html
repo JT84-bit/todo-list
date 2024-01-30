@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="user-interface">
+            <div class="project-header">Create Project</div>
+        </div>
+        
+        <div class="project-view">
+            <div class="project-view-header"></div>
+            <div class="todo-view"></div>
+        </div>
+    </div>
+    <div class="projectPop hidden">
+        <div class="form-header">Project name</div>
+        <div class="form">
+            <form action="submit" id="popForm">
+                <div>
+                    <input type="text" name="projectName" id="projectName" minlength="1" maxlength="15" required>
+                </div>
+                <button class="pAddButton">Add</button>
+            </form>
+        </div>
+    </div>
+    <div class="todoPop hidden">
+        <div class="form-header">New Todo</div>
+        <div class="formTodo">
+            <form action="submit" id="tpopForm">
+                <div class="todoName">
+                    <label for="topic">Name:</label>
+                    <input type="text" id="topic">
+                </div>
+                <div class="todoDescription">
+                    <label for="description">Description:</label>
+                    <textarea rows="2" cols="25" id="description"></textarea> 
+                </div>
+                <div class="dueDate">
+                    <label for="dueDate">Date:</label>
+                    <input type="date" id="dueDate">
+                </div>
+                <div class="priority">
+                    <label for="priority">Priority:</label>
+                    <select name="priority" id="priority">
+                        <option value="Priority 1">Priority 1</option>
+                        <option value="Priority 2">Priority 2</option>
+                        <option value="Priority 3">Priority 3</option>
+                    </select>
+                </div>
+                <button class="tAddButton">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
